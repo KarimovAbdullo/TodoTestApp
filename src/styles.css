@@ -1,0 +1,137 @@
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.app {
+  width: 400px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 8px;
+  padding-right: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #d0d0d0;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  color: #ffff;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  gap: 12px;
+}
+
+.todo-item span {
+  color: #000;
+  flex: 1;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.custom-checkbox {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.3s, border-color 0.3s;
+  flex-shrink: 0;
+}
+
+.custom-checkbox.checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.custom-checkbox.checked svg {
+  stroke: white;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 6px;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.delete-button:hover {
+  color: #f44336;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 14px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.filter-buttons button {
+  margin: 0;
+  padding: 4px 8px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #000;
+  font-weight: 500;
+}
+
+.filter-buttons .active {
+  background: #bbb;
+  color: white;
+}
+
+.clear {
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  margin-left: auto;
+  font-weight: 500;
+}
